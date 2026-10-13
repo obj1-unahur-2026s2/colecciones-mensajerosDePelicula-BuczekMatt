@@ -1,9 +1,13 @@
-object pepita {
-  var energy = 100
 
-  method energy() = energy
+import mensajeros.*
 
-  method fly(minutes) {
-    energy = energy - minutes * 3
+object puenteBrooklyn {
+  method puedePasar(unMensajero) {
+    return unMensajero.peso()<= 1000 && paquete.elPaqueteEstaPago()
+  }
+}
+object matrix {
+  method puedePasar(unMensajero) {
+    return unMensajero.puedeLlamar() && paquete.elPaqueteEstaPago()
   }
 }
